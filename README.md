@@ -15,3 +15,5 @@ Download `logic_checker.py` into the same folder, then run it with `python logic
 - Use of a 3rd state, `UNKNOWN`, for quicker inference.
 - 100x faster in checking `mastermind.py`, as compared to the original.
 - 5x faster in checking the Knights and Knaves problem.
+
+Test
