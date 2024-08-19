@@ -144,10 +144,10 @@ def checkKnights(problem=2):
 
 
 def main():
-    model = model_check(checkMastermind(), debug=False)
-    model = model_check(checkKnights(3), debug=False)
-    model = model_check(myCheck(), debug=False)
-    model = model_check(checkHarry(), debug=True)
+    model = model_check(checkMastermind(), 'blah', debug=False)
+    model = model_check(checkKnights(3), 'blah', debug=False)
+    model = model_check(myCheck(), 'blah', debug=False)
+    model = model_check(checkHarry(), 'blah', debug=True)
     pass
 
 if __name__ == '__main__':
