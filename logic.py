@@ -141,9 +141,6 @@ def model_check(knowledge, debug=False):
             for sym in unprocessed_syms:  # pick an undetermined sym
                 debug and print(f"Testing {sym}:")
                 (other_syms := unprocessed_syms.copy()).pop(sym)  # get a dict of other syms
-
-                # need to do something if other_syms is empty
-
                 for combi in combinations(other_syms, r):  # iterate over all combis of r symbols. If all combis result in FALSE, then symbol must be the opposite.
                     all_models_false = {TRUE: True, FALSE: True}  # record if all models evaluate FALSE
                     conjuncts_causing_false = {TRUE: set(), FALSE: set()}
