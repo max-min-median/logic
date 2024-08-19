@@ -1,7 +1,7 @@
 from itertools import combinations
 TRUE, FALSE, UNKNOWN = 2, 0, 1
 
-class Sentence():    
+class Sentence():
 
     def evaluate(self, model): raise NotImplementedError # Evaluates the logical sentence.
     def formula(self): raise NotImplementedError # Returns string formula representing logical sentence.
