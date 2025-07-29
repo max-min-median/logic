@@ -130,7 +130,7 @@ class Biconditional(Sentence):
     def symbols(self): return set.union(self.left.symbols(), self.right.symbols())
 
 
-def model_check(knowledge, debug=False):
+def model_check(knowledge, *args, debug=False):
     truth_values = {sym: None for sym in sorted(knowledge.symbols())}
     can_be_true_or_false = {FALSE: set(), TRUE: set()}
     modified = True

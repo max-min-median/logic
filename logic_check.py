@@ -146,7 +146,7 @@ def checkKnights(problem=2):
 def main():
     model = model_check(checkMastermind(), 'blah', debug=False)
     model = model_check(checkKnights(3), 'blah', debug=False)
-    model = model_check(myCheck(), 'blah', debug=False)
+    model = model_check(myCheck(), 'blah', debug=True)
     model = model_check(checkHarry(), 'blah', debug=True)
     pass
 
